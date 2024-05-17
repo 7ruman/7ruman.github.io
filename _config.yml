@@ -73,7 +73,7 @@ disqus_shortname:
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
 #theme: landscape
-theme: Sw-blog
+theme: diaspora
 exclude_generator:
 plugins:
 - hexo-generator-feed
