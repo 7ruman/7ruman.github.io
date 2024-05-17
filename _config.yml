@@ -27,11 +27,11 @@ auto_spacing: false # Add spaces between asian characters and western characters
 titlecase: false # Transform title into titlecase
 max_open_file: 100
 filename_case: 0
-highlight:
-  enable: true
-  backtick_code_block: true
-  line_number: true
-  tab_replace:
+# highlight:
+  # enable: true
+  # backtick_code_block: true
+  # line_number: true
+  # tab_replace:
 
 # Category & Tag
 default_category: uncategorized
@@ -72,8 +72,7 @@ disqus_shortname:
 # Extensions 这里配置站点所用主题和插件，暂时默认
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
-#theme: landscape
-theme: diaspora
+theme: reimu
 exclude_generator:
 plugins:
 - hexo-generator-feed
@@ -83,10 +82,13 @@ plugins:
 ## Docs: http://zespia.tw/hexo/docs/deploy.html
 deploy:
   type: git
-  repository: git@github.com:7ruman/7ruman.github.io.git
+  repository: http://github.com/7ruman/7ruman.github.io.git
   branch: master
   
-  
+search:
+  path: search.json # 文件名必须为search.json
+  field: post
+  content: true  
   
   
   
@@ -118,7 +120,7 @@ deploy:
 # i18n_dir: :lang
 # skip_render:
 
-# # Writing
+# Writing
 # new_post_name: :title.md # File name of new posts
 # default_layout: post
 # titlecase: false # Transform title into titlecase
@@ -131,13 +133,13 @@ deploy:
 # post_asset_folder: false
 # relative_link: false
 # future: true
-# syntax_highlighter: highlight.js
-# highlight:
-  # line_number: true
-  # auto_detect: false
-  # tab_replace: ''
-  # wrap: true
-  # hljs: false
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
 # prismjs:
   # preprocess: true
   # line_number: true
